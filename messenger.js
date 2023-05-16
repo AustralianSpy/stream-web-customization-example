@@ -11,11 +11,10 @@ import { withStreamClient } from 'lib/stream-messaging'
 import { useDebounce, useMobileHeight } from 'lib/hooks'
 import ChannelPreview from './channel-preview'
 import ChannelInner from './channel-inner'
-import ConversationLoader from './components/conversation-loader'
 import NewConversationDialog from './new-conversation-dialog'
 import EmptyChannel from './empty-channel'
 import { AttachmentContextProvider } from './use-attachment-context'
-import CustomAttachment from './components/attachments'
+import CustomAttachment from './attachments'
 
 const ChannelListHeader = React.memo(({ searchQuery, setSearchQuery }) => {
   return (
